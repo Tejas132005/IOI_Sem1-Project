@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+
+    <style class="text/css">
+        header{
+            color: dodgerblue;
+            margin: 20px;
+        }
+
+        h2{
+            color: goldenrod;
+            margin-left: 30px
+        }
+
+
+        .cards{
+            display: grid;
+            grid-template-columns: 4fr 4fr 4fr;
+        }
+        .card{
+            margin: 20px;
+        }
+        .card-header{
+            font-weight:bold;
+
+        }
+
+        @media (max-width: 480px){
+            .cards{
+                display: flex;
+                flex-direction: column;
+                
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Read Our Amazing Books..</h1>
+    </header>
+
+    <section>
+        <h2>Subscribe Plans</h2>
+
+        <main class="cards">
+            <div class="card">
+                <div class="card-header">
+                    Weekly
+                </div>
+                <div class="card-body">
+                    <p class="card-text">Plan your week !!. Amazing books are ready</p>
+                    <p class="card-text" style="color: gold;">&#8377; 200 / week</p>
+                    <a href="#" class="btn btn-primary text-light">Subscribe Now</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    Monthly
+                </div>
+                <div class="card-body">
+                    <p class="card-text">Be ready to spend your month productively... See yourself changed +months</p>
+                    <p class="card-text" style="color: gold;">&#8377; 700 / monthly</p>
+                    <a href="#" class="btn btn-primary text-light">Subscribe Now</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    Yearly
+                </div>
+                <div class="card-body">
+                  <p class="card-text">The best plan to by to be "Consistent". Ready to change your "Hobby"</p>
+                  <p class="card-text" style="color: green;">&#8377; 8000 / Yearly</p>
+                  <a href="#" class="btn btn-primary text-light">Subscribe Now</a>
+                </div>
+            </div>
+
+        </main>
+    </section>
+
+    
+</body>
+</html>

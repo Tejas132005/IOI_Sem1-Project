@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background-color: rgb(29, 231, 231);
+        }
+
+
+        .menu{
+            display: flex;
+            justify-content: space-between;
+        }
+        .menu a {
+            text-decoration: none;
+            color: white;
+            gap: 10px;
+        }
+
+        .header-icons {
+            font-size: x-large;
+        }
+
+        .bi-justify {
+            display: none;
+            cursor: pointer;
+        }
+
+        .intro {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .welcome-img img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .services .card {
+            box-shadow: 2px 2px 5px grey;
+            text-align: center;
+        }
+
+        .aboutUs {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .bookimg {
+            max-width: 100%;
+            height: auto;
+        }
+        .bi-book-half, .bi-headset, .bi-bookmark-fill, .bi-lock-fill{
+            font-size: 45px;
+            color: rgb(29, 231, 231);
+        }
+
+
+
+        .reviews {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            gap: 15px;
+            padding: 20px;
+        }
+        
+        .reviews .card {
+            width: 18rem;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+        }
+        
+        .reviews .card img {
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        .reviews .card-body {
+            text-align: center;
+            padding: 15px;
+        }
+        
+        
+
+        @media (max-width: 768px){
+            header {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+            .header-icons{
+                display: flex;
+                flex-direction: row;
+            }
+            .header-icons .bi{
+                margin-left: 10px;
+            }
+            .menu {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 60px;
+                right: 10px;
+                background: white;
+                box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+                padding: 10px;
+                border-radius: 5px;
+                margin-top: 10%;
+            }
+            .bi-justify {
+                display: block;
+            }
+            .menu.active {
+                display: flex;
+                margin-top: 3%;
+            }
+            .intro, .aboutUs {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .reviews {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+
+<body class="">
+
+    <!-- Header img/menu/icons -->
+    <header>
+        <div>
+            <img src="../Images/Book-header.png" alt="Logo" width="60" height="60">
+        </div>
+
+        <div class="menu">
+            <button class="btn btn-info"><a href="#home">Home</a></button>&nbsp;
+            <button class="btn btn-info"><a href="#aboutUs">About</a></button>&nbsp;
+            <button class="btn btn-info"><a href="#reviews">Reviews</a></button>&nbsp;
+            <button class="btn btn-info"><a href="your-books.html" style="color: orange; text-shadow: 10px 10px 10px 10px white;">Your Books</a></button>&nbsp;
+            <button class="btn btn-info"><a href="explore.html">Explore</a></button>
+        </div>
+
+        <div class="header-icons">
+            <span class="bi bi-search"></span>
+            <span class="bi bi-suit-heart-fill"></span>
+            <span class="bi bi-justify" id="lines"></span>
+        </div>
+    </header>
+
+ 
+    <!-- section 1   text/img -->
+    <section class="intro" id="home">
+        <div>
+            <h1>Welcome to <span style="color: rgb(29, 231, 231);">BOOK STORE</span></h1>
+            <p>
+                Step into a world of imagination, knowledge, and adventure—welcome to the bookstore! A place where stories come to life, ideas take shape, and every shelf holds the promise of a new journey. Whether you are a lover of fiction, a seeker of wisdom, or a curious explorer of history, there is a book waiting just for you. The scent of fresh pages, the quiet rustle of turning leaves, and the comforting embrace of endless words make this store more than just a place—it is a gateway to countless worlds. Take your time, wander through the aisles, and let the magic of books transport you beyond the limits of time and space. Happy reading!
+            </p>
+        </div>
+
+        <div class="welcome-img">
+            <img src="../Images/header-book-img.png" alt="Books">
+        </div>
+    </section>
+
+    
+
+    <!-- Services section -->
+    <section class="services" id="services">
+        <div class="card">
+            <span class="bi bi-book-half"></span>
+            <h5>Books</h5>
+            <p>A bookstore's bookshelf filled with e-books offers a modern and engaging reading experience.</p>
+        </div>
+
+        <div class="card">
+            <span class="bi bi-headset"></span>
+            <h5>24x7 Services</h5>
+            <p>Explore and purchase books anytime, anywhere with instant downloads.</p>
+        </div>
+
+        <div class="card">
+            <span class="bi bi-bookmark-fill"></span>
+            <h5>Best Deal</h5>
+            <p>Enjoy exclusive discounts on e-books across all genres.</p>
+        </div>
+
+        <div class="card">
+            <span class="bi bi-lock-fill"></span>
+            <h5>Secure Payment</h5>
+            <p>We ensure 100% secure payments for a safe and seamless shopping experience.</p>
+        </div>
+    </section>
+
+
+
+    <!-- About Us Section -->
+    <section class="aboutUs" id="aboutUs">
+        <img class="bookimg" src="../Images/books-img.png" alt="Books">
+        <p>
+            Welcome to our online bookstore, where we are dedicated to providing a rich and diverse collection of e-books. We focus on offering standard, fiction, scientific, philosophical, psychological, and story-based e-books, ensuring that readers find thought-provoking and engaging content that suits their interests.
+            Books have the power to educate, inspire, and transform perspectives. We take pride in bringing you a wide range of e-books that spark curiosity, expand knowledge, and enrich minds. Explore our collection and embark on a journey of endless discovery through the world of books!
+        </p>
+    </section>
+
+    <br><hr>
+
+
+
+    <!-- Reviews Section -->
+    <div style="margin-left: 1%; color: green;"> 
+        <h2>Reviews &nbsp;<span class="bi bi-list-columns-reverse"></span></h2>
+    </div>
+    <section class="reviews" id="reviews">
+        <div class="card" style="width: 18rem;">
+            <img src="../Images/sachin.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Sachin Tendulkar</h5>
+              <p class="card-text">
+                The store has a great selection of books, especially in technical and self-improvement genres. I am extremely happy for using money to read e-books form e-store.
+              </p>
+            <h3><span  class="bi bi-star-fill" style="color: gold;"></span><span  class="bi bi-star-fill" style="color: gold;"></span><span  class="bi bi-star-fill" style="color: gold;"></span><span  class="bi bi-star-fill" style="color: gold;"></span><span class="bi bi-star-fill" style="color:gold;"></span></h3>
+              
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <img src="../Images/messi.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Lionel Messi</h5>
+              <p class="card-text">
+                The subscription plans are quite affordable, and I was thrilled to get a great deal on the yearly plan! They also offer flexible monthly and weekly options, making it easy to choose what suits you best. Plus, the bundle plans provide excellent value for money!
+              </p>
+              <h3><span  class="bi bi-star-fill" style="color: gold;"></span><span  class="bi bi-star-fill" style="color: gold;"></span><span  class="bi bi-star-fill" style="color: gold;"></span><span  class="bi bi-star-fill" style="color: gold;"></span><span class="bi bi-star-fill" style="color:grey;"></span></h3>
+
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <img src="../Images/ronaldo.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Ronaldo</h5>
+                <p class="card-text">
+                    I purchased an e-book, and the download was instant. The ePub format worked seamlessly on my reader, providing a smooth and hassle-free experience across devices!
+                </p>
+                <h3><span  class="bi bi-star-fill" style="color: gold;"></span><span  class="bi bi-star-fill" style="color: gold;"></span><span  class="bi bi-star-fill" style="color: gold;"></span><span  class="bi bi-star-fill" style="color: gold;"></span><span class="bi bi-star-fill" style="color:gold;"></span></h3>
+
+            </div>
+        </div>
+    </section>
+
+
+    <script>
+        let lines = document.getElementById("lines");
+        let menu = document.querySelector(".menu");
+
+        lines.addEventListener("click", function(){
+            if(menu.style.display == 'none'){
+                menu.style.display = 'grid';
+            }
+            else{
+                menu.style.display = 'none';
+            }
+        })
+    </script>
+
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>

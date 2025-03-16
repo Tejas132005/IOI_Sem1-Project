@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algorithmic Puzzles</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+
+    <style>
+        body {
+            margin: 10px;
+        }
+
+        .follow-space {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: black;
+            color: white;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .follow {
+            margin-right: 40px;
+            font-size: 16px;
+            padding: 5px 15px;
+        }
+
+        header{
+            display: grid;
+            grid-template-columns: 5fr 7fr;
+            gap: 20px;
+            margin-top: 80px;
+        }
+
+        .header-img img {
+            width: 50%;
+            height : 90%;
+        }
+
+        .header-txt {
+            padding: 10px;
+        }
+
+        .author-link {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 20px;
+            align-items: center;
+            margin-left: 2%;
+        }
+
+        .link-author{
+            margin-left: -15%;
+        }
+
+        .author-img img {
+            width: 50%;
+            border-radius: 50%;
+        }
+
+        .feedback-form {
+            border: 1px solid black;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 1px 1px 10px 5px rgb(83, 185, 249);
+            width: 100%;
+            max-width: 400px;
+        }
+
+        .rating span {
+            font-size: 24px;
+            cursor: pointer;
+            color: grey;
+        }
+
+        a{
+            text-decoration: none;
+        }
+
+    
+        @media screen and (max-width: 768px) {
+            .follow-space {
+                flex-direction: column;
+                text-align: center;
+                padding: 10px;
+            }
+
+            .follow {
+                margin-right: 0;
+                font-size: 14px;
+                padding: 3px 10px;
+            }
+
+            header {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .author-link {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .feedback-form {
+                width: 90%;
+                margin: auto;
+            }
+            a{
+                text-decoration: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Follow Section -->
+    <div class="follow-space">
+        <span>Follow Our Page for Amazing Books</span>
+        <button class="follow btn btn-dark text-light">Follow</button>
+    </div>
+
+    <!-- Header Section -->
+    <header>
+        <div class="header-img" style="display: flex; align-items: center; justify-content: center;">
+            <img src="../Images/Algorthmic_Puzzles.jpeg" alt="Algorithmic Puzzles">
+        </div>
+
+        <div class="header-txt">
+            <h2>Algorithmic Puzzles <span style="font-size: large; color:grey;">Virtual Copy – 03 / Feb / 2025</span></h2> <br>  
+            <h6>Written By:</h6> 
+            <h5>Anany and Maria Levitin</h5> <br>
+            <h4>Book Insights:</h4>
+            <p>Algorithmic Puzzles explores classic and modern puzzles to develop analytical thinking and problem-solving skills.</p>
+
+            <br>
+            <h6>Download E-copy</h6>
+            <a href="../documents/Anany Levitin, Maria Levitin - Algorithmic Puzzles  -Oxford University Press (2011).pdf" download>Download</a>
+        </div>
+    </header>
+
+    <br><br>
+
+    <main>
+        <h4>Product Description</h4>
+        <p style="margin-left: 5%;">Indeed, I would say that this is a book that any mathematical puzzle enthusiast ought to consider buying. ― Martin Griffiths, The Mathematical Gazette</p>
+
+        <details style="margin-left: 2%;">
+            <summary style="font-weight: bold; font-size: large;">About the Author</summary>
+            <p style="margin-left: 5%;">Anany Levitin is a professor of Computing Sciences at Villanova University. He is the author of a popular textbook on design and analysis of algorithms, which has been translated into Chinese, Greek, Korean, and Russian. He has also published papers on mathematical optimization theory, software
+                engineering, data management, algorithm design, and computer science education.
+                Maria Levitin is an independent consultant. After some years working for leading software companies and developing business applications for large corporations, she now specializes in web-based applications and wireless computing.
+            </p>
+        </details>
+
+        <br>
+
+        <!-- Buy Section -->
+        <details style="margin-left: 2%;">
+            <summary style="color: green; font-weight: bold; font-size: large;">Buy & Read</summary>
+            <a style="margin-left: 2%;" href="https://www.amazon.in/dp/0199740445"><span class="bi bi-amazon"></span></a> <span>From Amazon</span> <br>
+            <a style="margin-left: 2%;" href="https://www.bookswagon.com/book/algorithmic-puzzles-levitin-anany-professor/9780199740444?srsltid=AfmBOorjuDk-6qG3c2guauP9b6qJwgDCc4fzFVy7IKz1cz9bTRhp3OcAT_M&gQT=1">
+                <img src="../Images/books-wagon-symbol.png" alt="" style="height: 25px; width: 25px;">
+            </a> <span> From Books Wagon </span>
+        </details>
+    </main>
+
+    <br><br>
+
+                <!-- Author Section -->
+    <main>
+        <h5>Know More About the Author</h5>
+        <p style="margin-left: 2%;">Follow authors for updates on new releases.</p>
+
+        <nav class="author-link">
+            <div class="author-img">
+                <img src="../Images/Anany-Levitin-img.jpg" alt="Anany Levitin">
+            </div>
+            <div class="link-author" style="font-size: xx-large;">
+                <a href="https://www.amazon.in/stores/Anany-Levitin/author/B001H6U330?ref=ap_rdr&isDramIntegrated=true&shoppingPortalEnabled=true">Anany Levitin</a>
+            </div>
+        </nav>
+    </main>
+
+    <br><br><br>
+
+                    <!-- Rating & Feedback Section -->
+
+    <div class="rating-form">
+        <main class="fill-details d-flex justify-content-center">
+            <div class="feedback-form">
+                <div class="rating">
+                    <div id="rate-us">Rate Us</div>
+                    <span class="bi bi-star-fill star1" style="color: grey; font-size: larger;"></span>
+                    <span class="bi bi-star-fill star2" style="color: grey; font-size: larger;"></span>
+                    <span class="bi bi-star-fill star3" style="color: grey; font-size: larger;"></span>
+                    <span class="bi bi-star-fill star4" style="color: grey; font-size: larger;"></span>
+                    <span class="bi bi-star-fill star5" style="color: grey; font-size: larger;"></span>
+                </div>
+
+                <br>
+
+                <form>
+                    <dt>Username</dt>
+                    <input type="text" class="form-control username" required>
+
+                    <dt>Feedback</dt>
+                    <textarea class="form-control feedback" rows="3" required></textarea>
+                    <br>
+
+                    <button type="submit" class="submit btn btn-primary w-100">Submit</button>
+                </form>
+            </div>
+
+            <div class="thanks-sentence text-primary" style="display: none;">
+                <h3 style="color: black;">!!! Thank You for Your Feedback !!!</h3>
+            </div>
+        </main>
+    </div>
+
+    <script>
+
+        document.querySelector(".follow").addEventListener("click", function() {
+            if (this.innerText === "Follow") {
+                this.innerText = "Following";
+            } else {
+                this.innerText = "Follow";
+            }
+        });
+
+
+        let star1 = document.querySelector(".star1")
+        let star2 = document.querySelector(".star2")
+        let star3 = document.querySelector(".star3")
+        let star4 = document.querySelector(".star4")
+        let star5 = document.querySelector(".star5")
+
+        let thankyou = document.querySelector(".thanks-sentence")
+        let submitted = document.querySelector(".submit")
+
+        let follow = document.querySelector(".follow")
+
+
+        star1.addEventListener("click",function(){
+            star1.style.color = "gold"
+        })
+
+        star2.addEventListener("click",function(){
+            star1.style.color = "gold"
+            star2.style.color = "gold"
+        })
+
+        star3.addEventListener("click",function(){
+            star1.style.color = "gold"
+            star2.style.color = "gold"
+            star3.style.color = "gold"
+        })
+
+        star4.addEventListener("click",function(){
+            star1.style.color = "gold"
+            star2.style.color = "gold"
+            star3.style.color = "gold"
+            star4.style.color = "gold"
+        })
+
+        star5.addEventListener("click",function(){
+            star1.style.color = "gold"
+            star2.style.color = "gold"
+            star3.style.color = "gold"
+            star4.style.color = "gold"
+            star5.style.color = "gold"
+        })
+
+        
+        document.querySelector(".submit").addEventListener("click", function(event) {
+            event.preventDefault();
+            let username = document.querySelector(".username").value;
+            let feedback = document.querySelector(".feedback").value;
+
+            if (username && feedback) {
+                document.querySelector(".thanks-sentence").style.display = 'block';
+                document.querySelector(".feedback-form").style.display = 'none';
+            }
+        });
+        
+    </script>
+
+</body>
+</html>

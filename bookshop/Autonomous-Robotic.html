@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to Autonomous Robots</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+
+    <style>
+        body {
+            margin: 10px;
+        }
+
+        .follow-space {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: black;
+            color: white;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .follow {
+            margin-right: 40px;
+            font-size: 16px;
+            padding: 5px 15px;
+        }
+
+        header{
+            display: grid;
+            grid-template-columns: 5fr 7fr;
+            gap: 20px;
+            margin-top: 80px;
+        }
+
+        .header-img img {
+            width: 50%;
+            height : 90%;
+        }
+
+        .header-txt {
+            padding: 10px;
+        }
+
+        .author-link {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 20px;
+            align-items: center;
+            margin-left: 2%;
+        }
+
+        .link-author{
+            margin-left: -15%;
+        }
+
+        .author-img img {
+            width: 50%;
+            border-radius: 50%;
+        }
+
+        .feedback-form {
+            border: 1px solid black;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 1px 1px 10px 5px rgb(83, 185, 249);
+            width: 100%;
+            max-width: 400px;
+        }
+
+        .rating span {
+            font-size: 24px;
+            cursor: pointer;
+            color: grey;
+        }
+
+        a{
+            text-decoration: none;
+        }
+
+    
+        @media screen and (max-width: 768px) {
+            .follow-space {
+                flex-direction: column;
+                text-align: center;
+                padding: 10px;
+            }
+
+            .follow {
+                margin-right: 0;
+                font-size: 14px;
+                padding: 3px 10px;
+            }
+
+            header {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .author-link {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .feedback-form {
+                width: 90%;
+                margin: auto;
+            }
+            a{
+                text-decoration: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Follow Section -->
+    <div class="follow-space">
+        <span>Follow Our Page for Amazing Books</span>
+        <button class="follow btn btn-dark text-light">Follow</button>
+    </div>
+
+    <!-- Header Section -->
+    <header>
+        <div class="header-img" style="display: flex; align-items: center; justify-content: center;">
+            <img src="../Images/autonomous-robotic.png" alt="Algorithmic Puzzles">
+        </div>
+
+        <div class="header-txt">
+            <h2>Introduction to Autonomous Robots <span style="font-size: large; color:grey;">Virtual Copy – 03 / Feb / 2025</span></h2> <br>  
+            <h6>Written By:</h6> 
+            <h5>Nikolaus Correll</h5> <br>
+            <h4>Book Insights:</h4>
+            <p>The book is a comprehensive introduction to the field of autonomous robotics aimed at upper-level undergraduates and offers additional online resources. It introduces concepts in mobile, autonomous robotics to 3rd-4th year students in Computer Science or a related discipline. Remember to double-check for the most up-to-date information.</p>
+
+            <br>
+            <h6>Download E-copy</h6>
+            <a href="../documents/Introduction to Autonomous Robots.pdf" download>Download</a>
+        </div>
+    </header>
+
+    <br><br>
+
+    <main>
+        <h4>Product Description</h4>
+        
+        <p style="margin-left: 5%;">Autonomous robots are self-sufficient machines that can operate independently without direct human control. These robots rely on a combination of sensors, artificial intelligence (AI), and machine learning algorithms to perceive their surroundings, make decisions, and execute tasks. Unlike traditional robots that require manual programming for every action, autonomous robots can analyze data in real-time, adapt to new environments, and even learn from past experiences. Their increasing adoption across industries is transforming the way tasks are performed, improving efficiency, safety, and productivity.</p>
+        
+        <p style="margin-left: 5%;">Autonomous robots are shaping the future by automating various tasks across different industries, improving efficiency, and enhancing human lives. As technology continues to evolve, these robots will become even more sophisticated, leading to increased autonomy, adaptability, and intelligence. However, addressing challenges such as ethical concerns, safety, and technical limitations will be essential for their successful integration into society. With continuous research and innovation, autonomous robots are set to play a crucial role in transforming industries and daily life.</p>
+
+        <details style="margin-left: 2%;">
+            <summary style="font-weight: bold; font-size: large;">About the Author</summary>
+            <p style="margin-left: 5%;">Nikolaus Correll is an Associate Professor of Computer Science at the University of Colorado at Boulder. He has obtained a degree in Electrical Engineering from ETH Zuerich in 2003 and a PhD from EPFL in 2007. From 2007-2009, he was a post-doc at the Computer Science and Artificial Intelligence Laboratory at the Massachusetts Institute of Technology. He is the recipient of a NASA Early Career award and a NSF CAREER award.</p>
+        </details>
+
+        <br>
+
+        <!-- Buy Section -->
+        <details style="margin-left: 2%;">
+            <summary style="color: green; font-weight: bold; font-size: large;">Buy & Read</summary>
+            <a style="margin-left: 2%;" href="https://www.amazon.in/Introduction-Autonomous-Robots-Mechanisms-Algorithms/dp/0262047551/ref=asc_df_0262047551/?tag=googleshopdes-21&linkCode=df0&hvadid=709881838993&hvpos=&hvnetw=g&hvrand=588694174129031235&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9061993&hvtargid=pla-1647879350138&psc=1&mcid=2620be993e5a30c29c2e108ad18032cc&tag=googleshopdes-21&linkCode=df0&hvadid=709881838993&hvpos=&hvnetw=g&hvrand=588694174129031235&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9061993&hvtargid=pla-1647879350138&psc=1&gad_source=1"><span class="bi bi-amazon"></span></a> <span>From Amazon</span>
+             
+            <br>
+
+            <a style="margin-left: 2%;" href="https://www.flipkart.com/introduction-autonomous-robots/p/itme3a64fv26wjnr?pid=9780262047555&lid=LSTBOK9780262047555QTEIBJ&marketplace=FLIPKART&cmpid=content_book_8965229628_gmc">
+                <img src="../Images/flipkart-icon.png" alt="" style="height: 25px; width: 25px;">
+            </a> <span> From Flipkart</span>
+        </details>
+    </main>
+
+    <br><br>
+
+                <!-- Author Section -->
+    <main>
+        <h5>Know More About the Author</h5>
+        <p style="margin-left: 2%;">Follow authors for updates on new releases.</p>
+
+        <nav class="author-link">
+            <div class="author-img">
+                <img src="../Images/Nikolaus Correll.png" alt="Anany Levitin">
+            </div>
+            <div class="link-author" style="font-size: xx-large;">
+                <a href="http://amazon.in/stores/Nikolaus-Correll/author/B09BHTXLT5?ref=ap_rdr&isDramIntegrated=true&shoppingPortalEnabled=true">Nikolaus Correll</a>
+            </div>
+        </nav>
+    </main>
+
+    <br><br><br>
+
+                    <!-- Rating & Feedback Section -->
+
+    <div class="rating-form">
+        <main class="fill-details d-flex justify-content-center">
+            <div class="feedback-form">
+                <div class="rating">
+                    <div id="rate-us">Rate Us</div>
+                    <span class="bi bi-star-fill star1" style="color: grey; font-size: larger;"></span>
+                    <span class="bi bi-star-fill star2" style="color: grey; font-size: larger;"></span>
+                    <span class="bi bi-star-fill star3" style="color: grey; font-size: larger;"></span>
+                    <span class="bi bi-star-fill star4" style="color: grey; font-size: larger;"></span>
+                    <span class="bi bi-star-fill star5" style="color: grey; font-size: larger;"></span>
+                </div>
+
+                <br>
+
+                <form>
+                    <dt>Username</dt>
+                    <input type="text" class="form-control username" required>
+
+                    <dt>Feedback</dt>
+                    <textarea class="form-control feedback" rows="3" required></textarea>
+                    <br>
+
+                    <button type="submit" class="submit btn btn-primary w-100">Submit</button>
+                </form>
+            </div>
+
+            <div class="thanks-sentence text-primary" style="display: none;">
+                <h3 style="color: black;">!!! Thank You for Your Feedback !!!</h3>
+            </div>
+        </main>
+    </div>
+
+    <script>
+
+        document.querySelector(".follow").addEventListener("click", function() {
+            if (this.innerText === "Follow") {
+                this.innerText = "Following";
+            } else {
+                this.innerText = "Follow";
+            }
+        });
+
+
+        let star1 = document.querySelector(".star1")
+        let star2 = document.querySelector(".star2")
+        let star3 = document.querySelector(".star3")
+        let star4 = document.querySelector(".star4")
+        let star5 = document.querySelector(".star5")
+
+        let thankyou = document.querySelector(".thanks-sentence")
+        let submitted = document.querySelector(".submit")
+
+        let follow = document.querySelector(".follow")
+
+
+        star1.addEventListener("click",function(){
+            star1.style.color = "gold"
+        })
+
+        star2.addEventListener("click",function(){
+            star1.style.color = "gold"
+            star2.style.color = "gold"
+        })
+
+        star3.addEventListener("click",function(){
+            star1.style.color = "gold"
+            star2.style.color = "gold"
+            star3.style.color = "gold"
+        })
+
+        star4.addEventListener("click",function(){
+            star1.style.color = "gold"
+            star2.style.color = "gold"
+            star3.style.color = "gold"
+            star4.style.color = "gold"
+        })
+
+        star5.addEventListener("click",function(){
+            star1.style.color = "gold"
+            star2.style.color = "gold"
+            star3.style.color = "gold"
+            star4.style.color = "gold"
+            star5.style.color = "gold"
+        })
+
+        
+        document.querySelector(".submit").addEventListener("click", function(event) {
+            event.preventDefault();
+            let username = document.querySelector(".username").value;
+            let feedback = document.querySelector(".feedback").value;
+
+            if (username && feedback) {
+                document.querySelector(".thanks-sentence").style.display = 'block';
+                document.querySelector(".feedback-form").style.display = 'none';
+            }
+        });
+        
+    </script>
+
+</body>
+</html>
